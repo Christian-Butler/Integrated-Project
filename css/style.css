@@ -1,0 +1,84 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #242424;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.4 rem;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 55px;
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 19px;
+  line-height: 21px;
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 33px;
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+p.sub {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+sub { 
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h4.tag {
+  background-color: black;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 5px 10px 5px 5px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+  gap: 12px;
+}
+
+.flexWidth {
+  flex-grow: 1;
+}
