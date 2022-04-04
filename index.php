@@ -55,11 +55,12 @@ try {
             <div class="width-1">
                 <h4 class="tag">World</h4>
                 <h3>
-                  <?= $worldStory->headline ?> 
+                 <a href="article.php?id=<?=$worldStory->id?>"><?= $worldStory->headline ?></a><?$worldStory->headline ?>
                 </h3>
                 <p>
+                <a href="article.php?id=<?= $worldStory->id ?>"> 
                    <?=substr($worldStory->article ,0,206) ?>...
-                </p>
+                </p></a>
             </div>
        
             <?php  } ?>
@@ -78,12 +79,13 @@ try {
         
             <div class="width-2 ">
                 <h4 class="tag">Sport</h4>
-                <h2 class= "sport-margin">  
-                <?= $sportStory->headline ?>
+                <h2 class= "sport-margin">
+                <a href="article.php?id=<?=$sportStory->id?>"><?=$sportStory->headline ?></a><?= $sportStory->headline ?>
                 </h2>
                 <p>
+                <a href="article.php?id=<?= $sportStory->id ?>"> 
                 <?=substr($sportStory->article ,0,148)?>...
-                </p> 
+                </p></a>
             
          
             </div>
