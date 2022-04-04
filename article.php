@@ -41,6 +41,7 @@ try {
 <body>
     <div class="container">
         <div class="width-6">
+            <!-- creating a function to pull the article from the database -->
           <?php
             $author = GET::byId('authors',$mainStory->author_id); ?>
             <h4 class="tag">Opinion</h4>

@@ -32,6 +32,7 @@ try {
 
     <div class="container">
         <div class="width-6">
+            <!-- creating a loop to display the main article -->
          <?php foreach($opinionStories as $opinionStory) { 
             $author = GET::byId('authors',$opinionStory->author_id); ?>
             <h4 class="tag">Opinion</h4>
@@ -68,7 +69,7 @@ try {
 
 
 
-
+      <!-- creating a loop to displat a row of sport stories -->
        <div class="width-12 nested">
         <?php foreach($sportStories as $sportStory){    ?>
      
