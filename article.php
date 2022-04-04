@@ -59,7 +59,7 @@ try {
                <?=$mainStory->article?>
           <?php ?>
         </div>
-
+       <!-- creating a loop passing through story id  -->
         <div class="width-6 nestedHalf">
         <?php foreach($categoryStories as $categoryStory){
             
