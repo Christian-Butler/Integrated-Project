@@ -55,7 +55,7 @@ try {
             <div class="width-1">
                 <h4 class="tag">World</h4>
                 <h3>
-                 <a href="article.php?id=<?=$worldStory->id?>"><?= $worldStory->headline ?></a><?$worldStory->headline ?>
+                 <a href="article.php?id=<?=$worldStory->id?>"><?= $worldStory->headline ?></a><?=$worldStory->headline?>
                 </h3>
                 <p>
                 <a href="article.php?id=<?= $worldStory->id ?>"> 

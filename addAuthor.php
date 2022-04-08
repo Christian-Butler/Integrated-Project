@@ -6,15 +6,15 @@
     $data = [
         'first_name' => "test",
         'last_name' => "test2",
-        'link' => "asdggafgasfgaafad"
-    ];
+        'link' => "mylink"
+      ];
       
-    Post::create('authors', $data);
+    Post::create('author', $data);
 
     header("Location; index.php"); 
       
    
    } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
-    }
+  }
 ?>
