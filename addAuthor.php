@@ -4,9 +4,9 @@
   try {
       
     $data = [
-        'first_name' => "test",
-        'last_name' => "test2",
-        'link' => "mylink"
+        'first_name' => $_POST[''],
+        'last_name' => $_POST[''],
+        'link' => $_POST['']
       ];
       
     Post::create('author', $data);
