@@ -1,7 +1,7 @@
 <?php
 //////////////////////////////////////////////////////
 ////////////CHANGE THESE SETTINGS ONLY////////////////
-define('DATABASE_NAME', 'news_db');
+define('DATABASE_NAME', 'mo_news');
 define('STORIES_TABLE_NAME', 'stories');
 define('CATEGORIES_TABLE_NAME', 'categories');
 define('CATEGORIES_FOREIGN_KEY', 'category_id');
@@ -20,7 +20,7 @@ class Connection
         $host = "localhost";
         $database = DATABASE_NAME;
         $username = "root";
-        $password = "root";
+        $password = "";
 
         $dsn = "mysql:dbname=" . $database . ";host=" . $host;
 
