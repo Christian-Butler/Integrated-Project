@@ -30,7 +30,14 @@ try {
 
 <body>
 
+
     <div class="container">
+
+        <div class="width-12">
+            <a href="index.php">Home</a>
+            <a href="addAuthorForm.php">Add Authors</a>
+            <a href="addStoryForm.php">Add Story</a>
+        </div>
         <div class="width-6">
             <!-- creating a loop to display the main article -->
          <?php foreach($opinionStories as $opinionStory) { 
