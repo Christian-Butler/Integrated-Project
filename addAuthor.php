@@ -9,7 +9,7 @@
         'link' => $_POST['link']
       ];
       
-    Post::create('author', $data);
+    Post::create('authors', $data);
 
     header("Location; index.php"); 
       
