@@ -11,10 +11,10 @@
       
     Post::create('authors', $data);
 
-    header("Location; index.php"); 
-      
-   
-   } catch (Exception $e) {
+    
+    
+  } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
   }
+  header("Location: index.php"); 
 ?>

@@ -20,7 +20,7 @@ class Connection
         $host = "localhost";
         $database = DATABASE_NAME;
         $username = "root";
-        $password = "root";
+        $password = "";
 
         $dsn = "mysql:dbname=" . $database . ";host=" . $host;
 
@@ -36,7 +36,57 @@ class Connection
     }
 }
 
-
+class Post
+{
+    public static function create($tableName, $data)
+    {
+       $sql = "INSERT INTO " . $tableName . "(" . implode(", ", array_keys($data)) . ") VALUES ('" . implode("', '", array_values($data)) . "')";
+       
+       var_dump($sql);
+        $conn = Connection::getInstance();
+        $stmt = $conn->prepare($sql);
+        $success = $stmt->execute();
+        // $success = $conn->exec($sql);
+        if (!$success) {
+            throw new Exception("Failed to save data");
+        } else {
+            $rowCount = $stmt->rowCount();
+            if ($rowCount !== 1) {
+                throw new Exception("Error saving data");
+            }
+            // $this->id = $conn->lastInsertId('Story');
+        }
+    }
+    public static function edit($tableName, $id, $data)
+    {
+      $sql = 'UPDATE ' . $tableName . ' SET ';
+      $count = 0;
+      foreach($data as $key => $value) {
+        $sql .= $key . ' = \'' . $value . '\'';
+        $count++;
+        if($count != sizeof($data)) {
+          $sql .= ', ';
+        }
+      }
+      $sql .= ' WHERE id = ' . $id;
+      // var_dump($sql);
+      
+      $conn = Connection::getInstance();
+      $stmt = $conn->prepare($sql);
+      $success = $stmt->execute();
+      
+      // $conn = Connection::getInstance();
+      // $success = $conn->exec($sql);
+      if (!$success) {
+          throw new Exception("Failed to save data");
+      } else {
+          $rowCount = $stmt->rowCount();
+          if ($rowCount !== 1) {
+              throw new Exception("Error saving data");
+          }
+      }
+    }
+}
 
 class Get
 {
