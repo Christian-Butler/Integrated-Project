@@ -21,7 +21,7 @@
 </header>
 <div class="container">
     <div class="width-6">
-        <h1>Add a New Author</h1>
+        <h1>Edit a Author</h1>
         <form method="POST" action="addAuthor.php">
             <div>
                 <label>First Name</label><br>

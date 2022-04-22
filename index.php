@@ -28,11 +28,13 @@ try {
 <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<header class="flex" >
-        <div class="flex2" >
+<header>
+        <div class="flex">
             <a href="index.php"><h2>Home</h2></a>
             <a href="addAuthorForm.php"><h2>Add Authors</h2></a>
             <a href="addStoryForm.php"><h2>Add Story</h2></a>
+            <a href="editStoryForm.php"><h2>Edit Story</h2></a>
+            <a href="editAuthorForm.php"><h2>Edit Author</h2></a>
         </div>
 </header>
 

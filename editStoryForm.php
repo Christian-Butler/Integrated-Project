@@ -21,19 +21,19 @@ try {
     <title>Add Story</title>
 </head>
 <body>
-<header >
-        <div class="flex">
+<header class= "flex">
+        <div>
             <a href="index.php"><h2>Home</h2></a>
             <a href="addAuthorForm.php"><h2>Add Authors</h2></a>
-            <a href="addStoryForm.php"><h2 class ="flex2">Add Story</h2></a>
+            <a href="addStoryForm.php"><h2>Add Story</h2></a>
             <a href="editStoryForm.php"><h2>Edit Story</h2></a>
             <a href="editAuthorForm.php"><h2>Edit Author</h2></a>
         </div>
 </header>
 <div class="container">
     <div class="width-6">
-        <h1>Add a New Story</h1>
-        <form method="POST" action="addStory.php">
+        <h1>Edit a Story</h1>
+        <form method="POST" action="editStory.php">
             <div>
                 <label>Headline</label><br>
                 <input type="text" name="headline">

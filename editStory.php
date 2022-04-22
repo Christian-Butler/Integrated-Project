@@ -5,7 +5,7 @@
       
     $data = [
       'headline' => $_POST['headline'],
-      'short_headline' => $_POST['short_heading'],
+      'short_heading' => $_POST['short_heading'],
       'sub_heading' => $_POST['sub_heading'],
       'article' => $_POST['article'],
       'summary' => $_POST['summary'],
@@ -15,7 +15,7 @@
       'author_id' => $_POST ['author_id']
       ];
       
-    Post::create('stories', $data);
+    Post::edit('stories', $tableName, $id, $data);
 
     header("Location; index.php"); 
       
