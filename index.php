@@ -28,16 +28,20 @@ try {
 <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<header class="flex" >
+        <div class="flex2" >
+            <a href="index.php"><h2>Home</h2></a>
+            <a href="addAuthorForm.php"><h2>Add Authors</h2></a>
+            <a href="addStoryForm.php"><h2>Add Story</h2></a>
+        </div>
+</header>
 
+<body>
+        
 
     <div class="container">
 
-        <div class="width-12">
-            <a href="index.php">Home</a>
-            <a href="addAuthorForm.php">Add Authors</a>
-            <a href="addStoryForm.php">Add Story</a>
-        </div>
+        
         <div class="width-6">
             <!-- creating a loop to display the main article -->
          <?php foreach($opinionStories as $opinionStory) { 

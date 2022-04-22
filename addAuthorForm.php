@@ -10,6 +10,13 @@
     <title>Add Author</title>
 </head>
 <body>
+<header >
+        <div class="flex">
+            <a href="index.php"><h2>Home</h2></a>
+            <a href="addAuthorForm.php"><h2>Add Authors</h2></a>
+            <a href="addStoryForm.php"><h2>Add Story</h2></a>
+        </div>
+</header>
 <div class="container">
     <div class="width-6">
         <h1>Add a New Author</h1>
