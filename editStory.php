@@ -15,7 +15,7 @@
       'author_id' => $_POST ['author_id']
       ];
       
-    Post::edit('stories',$tableName,$id,$data);
+    Post::edit('stories',$stories,$id,$data);
 
     header("Location; index.php"); 
       
