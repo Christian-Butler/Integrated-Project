@@ -22,7 +22,7 @@
 <div class="container">
     <div class="width-6">
         <h1>Edit a Author</h1>
-        <form method="POST" action="addAuthor.php">
+        <form method="POST" action="editAuthor.php">
             <div>
                 <label>First Name</label><br>
                 <input type="text" name="first_name">

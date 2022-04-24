@@ -21,8 +21,8 @@ try {
     <title>Add Story</title>
 </head>
 <body>
-<header class= "flex">
-        <div>
+<header>
+        <div class="flex">
             <a href="index.php"><h2>Home</h2></a>
             <a href="addAuthorForm.php"><h2>Add Authors</h2></a>
             <a href="addStoryForm.php"><h2>Add Story</h2></a>

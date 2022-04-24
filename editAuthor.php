@@ -9,7 +9,7 @@
         'link' => $_POST['link']
       ];
       
-    Post::edit('authors',$data);
+    Post::edit('authors',$tableNamne,$id,$data);
 
     
     
