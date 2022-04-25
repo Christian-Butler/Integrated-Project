@@ -5,7 +5,7 @@
       
     $data = [
       'headline' => $_POST['headline'],
-      'short_headline' => $_POST['short_heading'],
+      'short_heading' => $_POST['short_heading'],
       'sub_heading' => $_POST['sub_heading'],
       'article' => $_POST['article'],
       'summary' => $_POST['summary'],
@@ -17,10 +17,12 @@
       
     Post::create('stories', $data);
 
-    header("Location; index.php"); 
+    header("Location: index.php"); 
       
    
    } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
   }
+
+ 
 ?>
