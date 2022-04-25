@@ -38,13 +38,19 @@ try {
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
+<header>
+<div class="flex">
+            <a href="index.php"><h2>Home</h2></a>
+            <a href="addAuthorForm.php"><h2>Add Authors</h2></a>
+            <a href="addStoryForm.php"><h2>Add Story</h2></a>
+            <a href="editStoryForm.php"><h2>Edit Story</h2></a>
+            <a href="editAuthorForm.php"><h2>Edit Author</h2></a>
+        </div>
+</header>
+
 <body>
     <div class="container">
-    <div class="width-12">
-            <a href="index.php">Home</a>
-            <a href="addAuthorForm.php">Add Authors</a>
-            <a href="addStoryForm.php">Add Story</a>
-        </div>
+    
         <div class="width-6">
             <!-- creating a function to pull the article from the database -->
           <?php
@@ -75,7 +81,9 @@ try {
             ?>
 
             <div class="width-1">
-                <h4 class="tag">Opinion</h4>
+                <h4 class="tag"><?= $category->name?>
+               
+            </h4>
                 <h3>
                   <?= $categoryStory->headline ?> 
                 </h3>

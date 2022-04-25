@@ -2,9 +2,11 @@
 require_once 'classes/DBConnector.php';
 
 try {
+    $mainStory = GET::byId('stories', $_GET['id']);
+    // $categories = Get::all('categories');
+    // $authors = Get::all('authors');
+    // $categoryStories = Get::byCategory($category->name);
 
-    $categories = Get::all('categories');
-    $authors = Get::all('authors');
 } catch (Exception $e) {
     die("Exception: " . $e->getMessage());
 }
@@ -36,34 +38,42 @@ try {
         <form method="POST" action="editStory.php">
             <div>
                 <label>Headline</label><br>
+                <!-- <= $mainStory->headline ?> -->
                 <input type="text" name="headline">
             </div>
             <div>
                 <label>Short Headline</label><br>
+                <!--  $mainStory->short_heading?> -->
                 <input type="text" name="short_heading">
             </div>
             <div>
                 <label>Sub Heading</label><br>
+                <!--  $mainStory->sub_heading?> -->
                 <input type="text" name="sub_heading">
             </div>
             <div>
                 <label>Article</label><br>
+                <!--  $mainStory->article?> -->
                 <input type="text" name="article">
             </div>
             <div>
                 <label>Summary</label><br>
+                <!-- <= $mainStory->summary?> -->
                 <input type="text" name="summary">
             </div>
             <div>
                 <label>Date</label><br>
+                <!-- $mainStory->date -->
                 <input type="text" name="date">
             </div>
             <div>
                 <label>Time</label><br>
+                <!-- <php echo $mainStory -> time  ?>  -->
                 <input type="text" name="time">
             </div>
             <div>
                 <label>Category</label><br>
+                <!-- <= $mainStory->short_heading?> -->
                 <input type="text" name="category_id">
             </div>
             <div>

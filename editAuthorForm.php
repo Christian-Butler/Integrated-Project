@@ -20,7 +20,7 @@
         </div>
 </header>
 <div class="container">
-    <div class="width-6">
+    <div class="width-`12">
         <h1>Edit a Author</h1>
         <form method="POST" action="editAuthor.php">
             <div>

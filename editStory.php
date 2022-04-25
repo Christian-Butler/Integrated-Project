@@ -2,6 +2,13 @@
   require_once 'classes/DBConnector.php';
 
   try {
+
+     foreach($categoryStories as $categoryStory){
+            
+      if ($categoryStory->id !== $_GET['id']){}}
+
+      
+    
       
     $data = [
       'headline' => $_POST['headline'],
@@ -15,7 +22,7 @@
       'author_id' => $_POST ['author_id']
       ];
       
-    Post::edit('stories',$stories,$id,$data);
+    Post::edit('stories',$id, $data);
 
     header("Location; index.php"); 
       
