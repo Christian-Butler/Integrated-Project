@@ -23,15 +23,15 @@
     <div class="width-6">
         <h1>Add a New Author</h1>
         <form method="POST" action="addAuthor.php">
-            <div>
+            <div class = "first_name_error">
                 <label>First Name</label><br>
                 <input type="text" name="first_name">
             </div>
-            <div>
+            <div class = "last_name_error">
                 <label>Last Name</label><br>
                 <input type="text" name="last_name">
             </div>
-            <div>
+            <div class = "link_error">
                 <label>Link</label><br>
                 <input type="text" name="link">
             </div>
@@ -42,5 +42,6 @@
 
 
 </div>
+<script src="js/Authorform_validate.js"></script>
 </body>
 </html>

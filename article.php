@@ -55,7 +55,7 @@ try {
             <!-- creating a function to pull the article from the database -->
           <?php
             $author = GET::byId('authors',$mainStory->author_id); ?>
-            <h4 class="tag">Opinion</h4>
+            <h4 class="tag"><?= $category->name?></h4>
             <h1>
                <?= $mainStory->headline ?> <!-- Vladimir Putin sits atop a crumbling pyramid of power -->
             </h1>

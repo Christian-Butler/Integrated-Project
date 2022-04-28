@@ -34,39 +34,39 @@ try {
     <div class="width-6">
         <h1>Add a New Story</h1>
         <form method="POST" action="addStory.php">
-            <div>
+            <div class="headline_error">
                 <label>Headline</label><br>
                 <input type="text" name="headline">
             </div>
-            <div>
+            <div class = "short_heading_error">
                 <label>Short Headline</label><br>
                 <input type="text" name="short_heading">
             </div>
-            <div>
+            <div class = "sub_heading_error">
                 <label>Sub Heading</label><br>
                 <input type="text" name="sub_heading">
             </div>
-            <div>
+            <div class = "article_error">
                 <label>Article</label><br>
                 <input type="text" name="article">
             </div>
-            <div>
+            <div class ="summary_error">
                 <label>Summary</label><br>
                 <input type="text" name="summary">
             </div>
-            <div>
+            <div class ="date_error">
                 <label>Date</label><br>
                 <input type="text" name="date">
             </div>
-            <div>
+            <div class= "time_error">
                 <label>Time</label><br>
                 <input type="text" name="time">
             </div>
-            <div>
+            <div class="category_id_error">
                 <label>Category</label><br>
                 <input type="text" name="category_id">
             </div>
-            <div>
+            <div class= "author_id_error">
                 <label>Author</label><br>
                 <input type="text" name="author_id">
             </div>
