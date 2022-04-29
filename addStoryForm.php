@@ -77,5 +77,6 @@ try {
 
 
 </div>
+<script src="js/Storyform_validate.js"></script>
 </body>
 </html>
